@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ví dụ Table</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 8px;
+            border: 1px solid black;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Ví dụ HTML về bảng đơn giản</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Tên</th>
+                <th>Tuổi</th>
+                <th>Địa chỉ</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John Doe</td>
+                <td>30</td>
+                <td>123 ABC Street, XYZ City</td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>25</td>
+                <td>456 XYZ Avenue, ABC City</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+    <br>
+
+    <hr>
+    <h1>Ví dụ HTML về merge cột và dòng trong bảng</h1>
+
+    <table>
+        <caption>Danh sách sản phẩm</caption>
+        <thead>
+            <tr>
+                <th rowspan="2">Sản phẩm</th>
+                <th colspan="2">Tình trạng hàng</th>
+            </tr>
+            <tr>
+                <th>Còn hàng</th>
+                <th>Hết hàng</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3">Laptop</td>
+                <td>10</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td colspan="2">20</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>Máy in</td>
+                <td>8</td>
+                <td>2</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
